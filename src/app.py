@@ -12,7 +12,8 @@ def details():
     return jsonify({
         'time': timeNow,
         'hostname': socket.gethostname(),
-        'message': "I love Marilyn Monroe!!!"
+        'message': "I love Marilyn Monroe!!!",
+        'message2': "And Mikey Madison as well"
     })
 
 @app.route('/api/v1/healthz')
