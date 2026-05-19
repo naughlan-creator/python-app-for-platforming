@@ -68,7 +68,7 @@ jobs:
       - name: Install ArgoCd
         shell: bash
         run: |
-          # install argocd
+          # install argocd cli
           set -euo pipefail
           curl -ksSL -o argocd https://argocd-server.argocd/download/argocd-linux-amd64
           chmod +x argocd
