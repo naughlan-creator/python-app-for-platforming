@@ -5,7 +5,7 @@ import json, datetime, socket
 app = Flask(__name__)
 
 
-@app.route('/api/v1/details')
+@app.route('/api/v1/info')
 
 def details():
     timeNow = datetime.date.today().strftime("%I:%Mp on %B %d, %Y")
