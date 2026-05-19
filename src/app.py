@@ -13,7 +13,7 @@ def details():
         'time': timeNow,
         'hostname': socket.gethostname(),
         'message': "I love Marilyn Monroe!!!",
-        'message2': "And Mikey Madison as well;)"
+        'message2': "...Mikey Madison and Ana De Armas as well"
     })
 
 @app.route('/api/v1/healthz')
