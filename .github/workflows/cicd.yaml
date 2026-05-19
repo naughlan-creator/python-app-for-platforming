@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -63,6 +66,7 @@ jobs:
       - name: Commit changes
         uses: Endbug/add-and-commit@v9
         with:
+          add: "charts/python-app/values.yaml"
           message: 'Updates values.yaml with commit id ${{ needs.ci.outputs.commit_id }}'
     
       - name: Install ArgoCd
