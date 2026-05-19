@@ -40,8 +40,8 @@ jobs:
           
       - name: Argocd app sync
         env:
-          ARGO_USERNAME: ${{ secrets.ARGOCD_USERNAME }}
-          ARGO_PASSWORD: ${{ secrets.ARGOCD_PASSWORD }}
+          ARGOCD_USERNAME: ${{ secrets.ARGOCD_USERNAME }}
+          ARGOCD_PASSWORD: ${{ secrets.ARGOCD_PASSWORD }}
         shell: bash
         run: |
           argocd login argocd-server.argocd \
